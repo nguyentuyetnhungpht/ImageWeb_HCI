@@ -24,12 +24,6 @@ html {
 .row{
     max-width: 1440px;
     margin: 0 auto;
-
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
 }
 
 section{
@@ -121,32 +115,22 @@ header{
 }
 
 .logo{
-    height: 30px;
+    height: 50px;
     width: auto;
     float: left;
     margin-top: 20px;
-}
-
-.logo-name{
-    float: left;
-    color: aliceblue;
-    font-weight: 800;
-    font-size: 90%;
-    font-family:cursive;
-    padding-top: 25px;
-    padding-left: 5px;
+    margin-left: 20px;
 }
 
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 20px;
-    margin-right: 100px;
+    margin-top: 30px;
 }
 
 .main-nav li{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 40px;
 }
 
 .main-nav li a:link,
@@ -155,15 +139,10 @@ header{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 80%;
-    font-weight: 500;
+    font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active{
-    color: #e6e6e6;
 }
 
 .hero-text{
@@ -214,30 +193,77 @@ header{
     font-weight: 300;
 }
 
+/* ================= */
+/* MAIN NAV BAR CENTER */
+/* ================= */
+.main-nav-bar{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav-bar li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav-bar li a:link,
+.main-nav-bar li a:visited{
+    padding: 8px 0;
+    color: #5E5E5E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav-bar li a:hover,
+.main-nav-bar li a:active{
+    color: #0064F9;
+}
+
 /*========= GRID IMAGE HOME ========*/
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.grid-image{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
   
   /* Create two equal columns that sits next to each other */
   .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
     padding: 0 4px;
   }
   
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
   }
   

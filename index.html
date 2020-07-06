@@ -14,13 +14,12 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo.png" alt = "Remus logo" class="logo"> 
-                    <p class="logo-name">Remus</p> 
                     <ul class="main-nav">
                         <li><a href="#">Explore</a></li>
                         <li><a href="#">License</a></li>
                         <li><a href="#"><i class="ion-android-notifications-none icon-small"></i></a></li>
                         <li><a href="#"><i class="ion-ios-person icon-small"></i></a></li>
-                        <a class = "btn btn-full" href="#">Upload</a>
+                        <a class = "btn btn-full" href="#" style= "margin-right: 35px;">Upload</a>
                     </ul>
                 </div>
             </nav>
@@ -34,11 +33,17 @@
                 </div>
             </div>
         </header>
-        <section>
-            
+        <section class = "section-main-nav">
+            <ul class="main-nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Challenge</a></li>
+            </ul>
         </section>
         <section class="section-grid-image">
-            <div class="row"> 
+            <div class="grid-image"> 
                 <div class="column">
                   <img src="resources/img/pexels-1.jpeg" style="width:100%">
                   <img src="resources/img/pexels-2.jpeg" style="width:100%">
@@ -46,7 +51,6 @@
                   <img src="resources/img/pexels-4.jpeg" style="width:100%">
                   <img src="resources/img/pexels-5.jpeg" style="width:100%">
                   <img src="resources/img/pexels-6.jpeg" style="width:100%">
-                  <img src="resources/img/pexels-7.jpeg" style="width:100%">
                 </div>
                 <div class="column">
                     <img src="resources/img/pexels-1.jpeg" style="width:100%">
@@ -55,7 +59,6 @@
                     <img src="resources/img/pexels-4.jpeg" style="width:100%">
                     <img src="resources/img/pexels-5.jpeg" style="width:100%">
                     <img src="resources/img/pexels-6.jpeg" style="width:100%">
-                    <img src="resources/img/pexels-7.jpeg" style="width:100%">
                 </div>  
                 <div class="column">
                     <img src="resources/img/pexels-1.jpeg" style="width:100%">
@@ -64,7 +67,6 @@
                     <img src="resources/img/pexels-4.jpeg" style="width:100%">
                     <img src="resources/img/pexels-5.jpeg" style="width:100%">
                     <img src="resources/img/pexels-6.jpeg" style="width:100%">
-                    <img src="resources/img/pexels-7.jpeg" style="width:100%">
                 </div>
                 <div class="column">
                     <img src="resources/img/pexels-1.jpeg" style="width:100%">
@@ -73,38 +75,9 @@
                     <img src="resources/img/pexels-4.jpeg" style="width:100%">
                     <img src="resources/img/pexels-5.jpeg" style="width:100%">
                     <img src="resources/img/pexels-6.jpeg" style="width:100%">
-                    <img src="resources/img/pexels-7.jpeg" style="width:100%">
                 </div>
               </div>              
         </section>
-
-        <script>
-            // Get the elements with class="column"
-            var elements = document.getElementsByClassName("column");
-            
-            // Declare a loop variable
-            var i;
-            
-            
-            // Four images side by side
-            function four() {
-            for (i = 0; i < elements.length; i++) {
-                elements[i].style.msFlex = "25%";  // IE10
-                elements[i].style.flex = "25%";
-            }
-            }
-            
-            // Add active class to the current button (highlight it)
-            var header = document.getElementById("myHeader");
-            var btns = header.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
-            }
-            </script>
             
     </body>
 </html>
