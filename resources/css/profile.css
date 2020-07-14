@@ -40,13 +40,12 @@ h1,
 h2,
 h3 {
     font-weight: 300;
-    text-transform: uppercase;
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -63,6 +62,16 @@ h2 {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+}
+
+h4 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 h2:after{
@@ -90,7 +99,6 @@ h2:after{
 /*========= BUTTONS ========*/
 .btn{
     display: inline-block;
-    float: right;
     text-decoration: none;
     color: #fff;
     margin-left: 50px;
@@ -101,48 +109,57 @@ h2:after{
     border: 1px solid #05A081;
 }
 
-/* ================= */
-/* HEADER */
-/* ================= */
+.btn-full:link,
+.btn-full:visited{
+    background-color: #05A081;
+    border: 1px solid #05A081;
+}
 
-header{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/header-background.jpg); /*2 background at the same time, color on top image*/
-    background-size: cover;
-    background-position: center;
-    height: 70vh; /*100% of viewport*/
-    background-attachment: fixed; /*A background-image that will not scroll with the page (fixed)*/
+.btn-full:hover,
+.btn-full:active{
+    background-color: #05A081;
+    border: 1px solid #05A081;
+}
+
+.btn-full-small{
+    padding:3px 10px;
+    margin:2px;
+    font-size:15px;
+    background-color: #05A081;
+    border: 1px solid #05A081;
+}
+
+.btn-ghost-small{
+    padding:3px 10px;
+    margin:2px;
+    font-size:15px;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    color:black;
 }
 /* ======= LOGO =========== */
-.main-nav-bar-top{
-    margin-top: 30px;
-}
-
-.logo-image {
-    height: 50px;
-    width: auto;
-    float: left;
-    margin-top: -15px;
-    margin-left: 20px;
-}
-
-.logo-text {
+.logo-text:link,
+.logo-text:visited{
     color: #fff;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin-left: 10px;
+    margin-left:5px;
+    margin-right: 35px;
+    font-size:20px; 
+    font-weight: bold;
+}
+.logo-text:hover,
+.logo-text:active{
+    color: #fff;
+    margin-left:5px;
+    margin-right: 35px;
+    font-size:20px; 
     font-weight: bold;
 }
 
-.main-nav{
-    list-style: none;
-    float: right;
-}
-
+/*======== MAIN NAV TOP ======*/
 .main-nav li{
-    display: inline-block;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main-nav li a:link,
@@ -157,51 +174,59 @@ header{
     transition: border-bottom 0.2s;
 }
 
-/*========= SEARCH BOX ========*/
-.hero-text{
+/*==================*/
+/*USER INFO SECTION*/
+/*==================*/
+
+.section-profile{
+    margin: 80px;
+}
+.profile-header{
     position: absolute;
-    width: 40%;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 25px;
-    font-weight: bold;
+    width: 1140px;
+    top: 25%;
+    left:50%;
+    transform: translate(-30%, -25%);
 }
 
-.search-box{
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #fff;
-    height: 50px;
-    width: 40%;
-    border-radius: 8px;
-    padding: 0px;
-}
-
-.search-btn{
-    color: #555;
-    float: right;
-    width: 50px;
-    height: 50px;
+.media img{
+    height: 150px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
 }
 
-.search-txt{
-    border: none;
-    background: none;
-    outline: none;
-    width: 85%;
-    padding: 3px;
-    border-radius: 5px;
+.user-name{
+    font-weight: bold;
     float: left;
-    line-height: 40px;
-    font-size: 17px;
-    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.group-btn{
+    margin-left: 20px;
+}
+
+.user-social{
+    width: auto;
+    margin: 30px 0px;
+    position: fixed;
+    font-weight: 100;
+    color: #707070;
+}
+
+.user-social-link{
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.user-intro{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.user-view{
+    color: #000;
+    font-size: 15px;
 }
 
 /* ================= */
@@ -209,10 +234,10 @@ header{
 /* ================= */
 .main-nav-bar-center{
     margin: 10px;
-    font-size: 17px;
-    border-bottom: 1px solid #F1F1F1;
-    box-shadow: 0 4px 2px -2px #F1F1F1;
+    font-size: 15px;
 }
+
+
 
 .main-nav-bar li a:link,
 .main-nav-bar li a:visited{
@@ -231,7 +256,7 @@ header{
 /* ================= */
 
 .section-grid-image{
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -240,7 +265,7 @@ header{
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0px;
+    margin: 0px 20px;
   }
   
   /* Create two equal columns that sits next to each other */
@@ -248,11 +273,11 @@ header{
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 6px;
   }
   
   .column img {
-    margin-top: 8px;
+    margin: 6px 0;
     vertical-align: middle;
     width: 100%;
   }
