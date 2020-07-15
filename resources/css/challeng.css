@@ -333,8 +333,12 @@ h2:after{
     /* Challenge Detail */
   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.challenge-hero{
+  /* ================= */
+/* CHALLENGE-TITLE */
+/* ================= */
 
+.challenge-hero{
+    padding-left: 90px;
 }
 
 
@@ -357,14 +361,49 @@ h2:after{
     height: 60px;
     border: 1px solid #E8E8E8;
     border-radius: 50%;
-    
 }
 
 .challenge-submit{
-    text-align: end;
+    padding-left: 50px;
 }
 
 .challenge-hero-title-ready{
     font-size:25px;
     font-weight: 700;
 }
+
+  /* ================= */
+/* CHALLENGE-DESCRIBE */
+/* ================= */
+
+.section-challenge-describe{
+    background-color: #F9F9F9;
+}
+
+.challenge-describe-text{
+    padding-left: 90px;
+}
+
+
+.challenge-describe-text-title{
+    font-size:22px;
+    font-weight:700;
+}
+
+.challenge-describe-text-content{
+    font-size: 17px;
+}
+
+.challenge-submit img{
+    height: 300px;
+    width: 500px;
+    border-radius:10px;
+}
+
+.challenge-submit-present img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+}
+
