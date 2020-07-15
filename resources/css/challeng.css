@@ -219,6 +219,7 @@ h2:after{
     margin: 20px 0;
     font-size: 25px;
     font-weight: bold;
+    color: #000;
 }
 
 .challenge-card-content-overview{
@@ -327,3 +328,43 @@ h2:after{
     /* grid-column: 5 / span 4; */
     /* grid-row: 6 / span 3; */
   }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* Challenge Detail */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.challenge-hero{
+
+}
+
+
+.challenge-hero-title-detail{
+    font-size:18px;
+    font-weight:400;
+}
+
+.challenge-hero-title-title{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.challenge-hero-title-prize{
+    font-size:15px;
+    
+}
+.challenge-hero-title-prize img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+    
+}
+
+.challenge-submit{
+    text-align: end;
+}
+
+.challenge-hero-title-ready{
+    font-size:25px;
+    font-weight: 700;
+}
