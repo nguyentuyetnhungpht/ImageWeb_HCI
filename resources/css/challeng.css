@@ -74,16 +74,6 @@ h4 {
     letter-spacing: 1px;
 }
 
-h2:after{
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
 /*========== ICONS ==========*/
 
 .icon-small{
@@ -406,4 +396,44 @@ h2:after{
     border: 1px solid #E8E8E8;
     border-radius: 50%;
 }
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* Challenge UPLOAD */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+  .challenge-upload-title{
+    margin: 40px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.upload-info-list{
+    width:700px;
+    height: 150px;
+    margin-left: 250px;
+}
+
+.upload-info-list li{
+    color: #616161;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.challenge-upload-btn{
+    margin: 0 140px;
+    width: 900px;
+    height: 90px;
+    text-align: center;
+    padding: 18px 40px;
+    border: 2px solid #DADADA;
+    background-color: #F5F5F5;
+    border-style: dashed;
+}
+
+.challenge-upload-publish{
+    text-align: center;
+    margin-top: 25%;
+    padding: 10px 0;
+    border-top: 1px solid #DADADA;
+}
