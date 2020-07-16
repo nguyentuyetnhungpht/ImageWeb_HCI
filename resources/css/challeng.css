@@ -46,17 +46,18 @@ h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #000;
-    font-size: 250%;
+    font-size: 260%;
     word-spacing: 4px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 h2 {
     font-size: 180%;
     word-spacing: 2px;
-    text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    color: #000;
 }
 
 h3 {
@@ -86,15 +87,32 @@ h4 {
    
 }
 
+/*========== LINKS ==========*/
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2, color 0.2;
+    transition: border-bottom 0.2, color 0.2;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 /*========= BUTTONS ========*/
 .btn{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    margin-left: 50px;
     border-radius: 3px;
 }
 .btn-full{
+    font-size:18px;
+    font-weight: 500;
+    padding: 5px 25px;
     background-color: #05A081;
     border: 1px solid #05A081;
 }
@@ -107,8 +125,9 @@ h4 {
 
 .btn-full:hover,
 .btn-full:active{
-    background-color: #05A081;
-    border: 1px solid #05A081;
+    color: #CEBDC5;
+    background-color: #1A836E;
+    border: 1px solid #1A836E;
 }
 
 .btn-full-small{
@@ -128,37 +147,27 @@ h4 {
     color:black;
 }
 /* ======= LOGO =========== */
-.logo-text:link,
-.logo-text:visited{
-    color: #fff;
+.logo-text{
     margin-left:5px;
     margin-right: 35px;
-    font-size:20px; 
-    font-weight: bold;
-}
-.logo-text:hover,
-.logo-text:active{
-    color: #fff;
-    margin-left:5px;
-    margin-right: 35px;
-    font-size:20px; 
+    font-size:20px;
     font-weight: bold;
 }
 
 /*======== MAIN NAV TOP ======*/
+.main-nav{
+    color: #fff;
+    margin-left:10px;
+    font-size: 90%;
+}
+
 .main-nav li{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0 13px;    
 }
 
 .main-nav li a:link,
 .main-nav li a:visited{
-    padding: 8px 0;
-    color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -169,6 +178,7 @@ h4 {
 .main-nav-bar-center{
     margin: 10px;
     font-size: 17px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #F1F1F1;
     box-shadow: 0 4px 2px -2px #F1F1F1;
 }
@@ -185,33 +195,34 @@ h4 {
     color: #0064F9;
 }
 
+
 /* ====== CHALLENGE TEXT ======= */
 
 .challenge-text{
     width:1440px;
     text-align:center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .challenge-text-h1{
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* ================= */
 /* CHALLENGE SECTION */
 /* ================= */
-
-.challenge-section{
-    margin-top: 20px;
+.challenge-past-section{
+    background-color: #F9F9F9;
+    
 }
 
-.challenge-section-active{
+h2 a:link, 
+h2 a:visited{
     margin: 20px 0;
     font-size: 25px;
     font-weight: bold;
     color: #000;
 }
-
 .challenge-card-content-overview{
     font-size: 15px;
     font-weight: 600;
@@ -238,6 +249,8 @@ h4 {
     height:25px;
     margin-right: 5px;
 }
+
+
 /* ========== challenge section GRID========== */
 .gallery {
     display: grid;
@@ -357,6 +370,14 @@ h4 {
     padding-left: 50px;
 }
 
+.challenge-submit a:hover,
+.challenge-submit a:active{
+    color: #CEBDC5;
+    background-color: #1A836E;
+    border: 1px solid #1A836E;
+
+}
+
 .challenge-hero-title-ready{
     font-size:25px;
     font-weight: 700;
@@ -381,7 +402,8 @@ h4 {
 }
 
 .challenge-describe-text-content{
-    font-size: 17px;
+    font-size: 16px;
+    margin-left: 30px;
 }
 
 .challenge-submit img{

@@ -17,51 +17,54 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/challeng.css">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="height:55px; background-color: #232B34; ">
         <img src="resources/img/logo.png" alt="Remus logo" style="height:50px;">
-        <a class="logo-text" href="/index.html">Remus</a>
+        <div class="logo-text"><a href="/index.html">Remus</a></div>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" style="width:700px;" placeholder="Search for free photos">
+            <input class="form-control mr-sm-2" type="search" style="width:780px; height: 40px;"
+                placeholder="Search for free photos">
         </form>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-right: 10px;">
             <ul class="main-nav navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Explore <span class="sr-only">(current)</span></a>
+                <li>
+                    <a href="#">Explore <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">License</a>
+                <li>
+                    <a href="#">License</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="ion-android-notifications-none icon-small"></i></a>
+                <li>
+                    <a href="#"><i class="ion-ios-bell icon-small"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./profile.html"><i class="ion-ios-person icon-small"></i></a>
+                <li>
+                    <a href="./profile.html"><i class="ion-android-person icon-small"></i></a>
                 </li>
             </ul>
         </div>
-        <button class="btn btn-full btn-outline-success my-2 my-sm-0" type="submit">Upload</button>
+        <button class="btn btn-full" type="submit">Upload</button>
     </nav>
     <div class="main-nav-bar-center">
         <ul class="nav justify-content-center main-nav-bar">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discover</a>
+                <a class="nav-link" href="#">Discover</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+                <a class="nav-link" href="#">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Leaderboard</a>
+                <a class="nav-link " href="#">Leaderboard</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./challenge-list.html">Challenge</a>
-              </li>
-          </ul>
+            <li class="challenge-li-active nav-item">
+                <a class=" nav-link" href="./challenge-list.html" 
+                style="color: #0064F9;">Challenge</a>
+            </li>
+        </ul>
     </div>
 </head>
+
 <body>
     <div class="row">
         <div class="challenge-text">
@@ -70,26 +73,25 @@
         </div>
     </div>
 
+  <section class="challenge-active-section">
     <div class="container">
         <div class="row">
             <div class="challenge-section">
-                <a class="challenge-section-active" href="./challenge-detail.html">Active Challenges</a>
+                <h2><a class="challenge-section-active" href="./challenge-detail.html">Active Challenges</a></h2>
                 <div class="challenge-gallery">
                     <div class="gallery">
-                        <figure class="gallery__item gallery__item--1" >
-                            <img src="resources/img/pexels-1.jpeg" 
-                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" 
-                            alt="Gallery image 1" class="gallery__img">
+                        <figure class="gallery__item gallery__item--1">
+                            <img src="resources/img/pexels-1.jpeg"
+                                style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"
+                                alt="Gallery image 1" class="gallery__img">
                         </figure>
                         <figure class="gallery__item gallery__item--2">
-                            <img src="resources/img/pexels-4.jpeg" 
-                            style="border-bottom-right-radius: 10px;"
-                            alt="Gallery image 2" class="gallery__img">
+                            <img src="resources/img/pexels-4.jpeg" style="border-bottom-right-radius: 10px;"
+                                alt="Gallery image 2" class="gallery__img">
                         </figure>
                         <figure class="gallery__item gallery__item--3" style="  margin: 0; padding: 0;">
-                            <img src="resources/img/pexels-2.jpeg" 
-                            style="border-top-right-radius: 10px;"
-                            alt="Gallery image 3" class="gallery__img">
+                            <img src="resources/img/pexels-2.jpeg" style="border-top-right-radius: 10px;"
+                                alt="Gallery image 3" class="gallery__img">
                         </figure>
                     </div>
                 </div>
@@ -99,39 +101,44 @@
                     </div>
                     <p class="challenge-title">Sleep Sundays</p>
                     <p class="challenge-present"><img src="resources/img/logo.png" alt="avatar"> Present by Remus.</p>
-                </div>
-                </div>
-
-                <a class="challenge-section-active" href="./challenge-detail.html">Pasts Challenges</a>
-                <div class="challenge-gallery">
-                    <div class="gallery">
-                        <figure class="gallery__item gallery__item--1" >
-                            <img src="resources/img/pexels-3.jpeg" 
-                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" 
-                            alt="Gallery image 1" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--2">
-                            <img src="resources/img/pexels-5.jpeg" 
-                            style="border-bottom-right-radius: 10px;"
-                            alt="Gallery image 2" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--3" style="  margin: 0; padding: 0;">
-                            <img src="resources/img/pexels-6.jpeg" 
-                            style="border-top-right-radius: 10px;"
-                            alt="Gallery image 3" class="gallery__img">
-                        </figure>
-                    </div>
-                </div>
-                <div class="challenge-card-content">
-                    <div class="challenge-card-content-overview">
-                        0 days left · $200 cash prize · 6.1K photos and videos
-                    </div>
-                    <p class="challenge-title">Sleep Sundays</p>
-                    <p class="challenge-present"><img src="resources/img/logo.png" alt="avatar"> Present by Remus.</p>
-                </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    </section>
+
+    <section class="challenge-past-section">
+        <div class="container">
+            <div class="row">
+                <h2><a class="challenge-section-active" href="./challenge-detail.html">Pasts Challenges</a></h2>
+                <div class="challenge-gallery">
+                    <div class="gallery">
+                        <figure class="gallery__item gallery__item--1">
+                            <img src="resources/img/pexels-3.jpeg"
+                                style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" alt="Gallery image 1"
+                                class="gallery__img">
+                        </figure>
+                        <figure class="gallery__item gallery__item--2">
+                            <img src="resources/img/pexels-5.jpeg" style="border-bottom-right-radius: 10px;"
+                                alt="Gallery image 2" class="gallery__img">
+                        </figure>
+                        <figure class="gallery__item gallery__item--3" style="  margin: 0; padding: 0;">
+                            <img src="resources/img/pexels-6.jpeg" style="border-top-right-radius: 10px;"
+                                alt="Gallery image 3" class="gallery__img">
+                        </figure>
+                    </div>
+                </div>
+                <div class="challenge-card-content">
+                    <div class="challenge-card-content-overview">
+                        0 days left · $200 cash prize · 6.1K photos and videos
+                    </div>
+                    <p class="challenge-title">Sleep Sundays</p>
+                    <p class="challenge-present"><img src="resources/img/logo.png" alt="avatar"> Present by Remus.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>
