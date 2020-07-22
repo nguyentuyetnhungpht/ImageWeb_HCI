@@ -198,6 +198,11 @@ a:active{
 /* Section title */
 /* ================= */
 
+h2 a:link, 
+h2 a:visited{
+    color: #000;
+}
+
 .leaderboard_title_headline{
     padding: 20px 100px;
 }
@@ -271,3 +276,5 @@ a:active{
     object-fit:cover;
 
   }
+
+  
