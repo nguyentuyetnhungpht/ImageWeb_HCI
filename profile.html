@@ -23,7 +23,7 @@
                 placeholder=" Search for free photos">
         </form>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-right: 10px;">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="main-nav navbar-nav mr-auto mt-2 mt-lg-0">
                 <li>
                     <a href="#">Explore <span class="sr-only">(current)</span></a>
@@ -32,14 +32,17 @@
                     <a href="#">License</a>
                 </li>
                 <li>
-                    <a href="#"><i class="ion-ios-bell icon-small"></i></a>
+                    <a href="#" class="ion-ios-bell icon-small"></a>
                 </li>
                 <li>
-                    <a href="./profile.html"><i class="ion-android-person icon-small"></i></a>
+                    <a href="./profile.html" class="ion-android-person icon-small"></a>
+                </li>
+                <li>
+                    <button class="btn btn-full btn-upload" type="submit">Upload</button>
                 </li>
             </ul>
         </div>
-        <button class="btn btn-full" type="submit">Upload</button>
+        
     </nav>
 </head>
 
@@ -48,8 +51,7 @@
         <div class="row">
             <div class="profile-header">
                 <div class="profile-user-info">
-                    <div class="media">
-                        <img src="resources/img/user-img.jpeg" class="mr-3" alt="user avatar">
+                    <img src="resources/img/user-img.jpeg" class="user-avatar" alt="user avatar">
                         <div class="media-body">
                             <h2 class="user-name">Lisa Fotios</h2>
                             <span class="group-btn">
@@ -67,7 +69,6 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

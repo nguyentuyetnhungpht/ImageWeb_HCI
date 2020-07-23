@@ -130,7 +130,7 @@ a:active{
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;
-    padding:3px 10px;
+    padding: 5px 15px;
     margin:2px;
     font-size:15px;
 }
@@ -151,6 +151,10 @@ a:active{
     background-color: #fff;
     border: 1px solid #DDDDDD;
     color:black;
+}
+
+.btn-upload{
+    margin-top: -5px;
 }
 /* ======= LOGO =========== */
 
@@ -174,7 +178,8 @@ a:active{
 /*======== MAIN NAV TOP ======*/
 .main-nav{
     color: #fff;    
-    margin-left:10px;
+    margin-left:10%;
+    padding-top: 5px;
     font-size: 90%;
 }
 
@@ -196,18 +201,26 @@ a:active{
 
 .section-profile{
     margin: 80px;
+    padding-bottom: 130px;
 }
 .profile-header{
     position: absolute;
-    top: 25%;
-    left:40%;
+    top: 30%;
+    left:57%;
+    width: 100%;
     transform: translate(-30%, -25%);
 }
 
-.media img{
+.media-body{
+    float: left;
+    margin-left: 20px;
+}
+
+.user-avatar{
     height: 150px;
     border-radius: 50%;
     vertical-align: middle;
+    float: left;
 }
 
 .user-name{
@@ -237,6 +250,7 @@ a:active{
 .user-intro{
     margin: 10px 0;
     font-size: 18px;
+    color: #000;
 }
 
 .user-view{
