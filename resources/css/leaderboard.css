@@ -141,42 +141,91 @@ a:active{
     border: 1px solid #DDDDDD;
     color:black;
 }
-/* ======= LOGO =========== */
-.logo-img{
-    height:50px;
+
+.btn_upload{
+    margin-top: -5px;
 }
-.logo-text{
-    margin-left:5px;
-    margin-right: 35px;
-    font-size:20px;
+
+/* ======= LOGO =========== */
+.logo-image {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.logo-text {
+    color: #fff;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
     font-weight: bold;
 }
 
 .search-box{
-    width: 750px;
-    height: 45px;
+    position: absolute;
+    top: 2.3%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    height: 40px;
+    width: 50%;
     border-radius: 5px;
-    border-style: none;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    width: 85%;
+    padding: 2px;
+    border-radius: 5px;
+    float: left;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 /*======== MAIN NAV TOP ======*/
+
+
+
+.main-nav-top{
+    height: 60px;
+    background-color: #232B34;
+}
+
 .main-nav{
-    color: #fff;
-    margin-left:10px;
-    font-size: 90%;
+    list-style: none;
+    float: right;
 }
 
 .main-nav li{
-    padding: 0 13px;    
+    display: inline-block;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 90%;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited{
-    text-decoration: none;
+    color: #fff;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
+
+
+.main-nav li a:active,
+.main-nav li a:hover{
+    color: #555;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
 /* ================= */
 /* MAIN NAV BAR CENTER */
 /* ================= */

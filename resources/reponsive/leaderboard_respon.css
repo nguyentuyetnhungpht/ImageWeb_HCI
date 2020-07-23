@@ -1,24 +1,252 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+     /*============ NAV BAR ======*/
+    .logo-image {
+        margin-left: 0px;
+    }
+
+    .btn-full{
+        padding: 4px 22px;
+    }
+
+    .search-box{
+        top: 2.35%;
+        left: 34%;
+        width: 42%;
+    }
+    .main-nav li{
+        margin-left: 35px;
+    }
+
     
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px){
+     /*============ NAV BAR ======*/
+
+    .logo-text{
+        display: none;
+    }
+
+    .logo-image {
+        margin-left: 5px;
+    }
+    .search-box{
+        top: 2.5%;
+        left: 38%;
+        width: 60%;
+    }
+
    
+    .main-nav-top{
+       padding-top: 3px;
+    }
+
+    .main-nav li:first-child{ 
+        display: none
+    }
+
+    .main-nav li:nth-child(2){ 
+        display: none;
+    }
+    /*============ USER ======*/
+    .leaderboard_info{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .leaderboard_name{
+        font-weight: 700;
+        font-size: 28px;
+    }
+    
+    .leaderboard_name_detail{
+        font-size: 14px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px)  { 
+     /*============ NAV BAR ======*/
+     .logo-text{
+        display: none;
+    }
+
+    .logo-image {
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .search-box{
+        top: 3%;
+        left: 45%;
+        width: 75%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
+
+    /*============ USER ======*/
+
 
  }
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 598px) and (max-width: 767px){
+     /*============ NAV BAR ======*/
+     .logo-text{
+        display: none;
+    }
+
+    .logo-image {
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .search-box{
+        top: 3.2%;
+        left: 45%;
+        width: 70%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
+
    
 }
 
 @media (min-width: 480px) and (max-width: 597px){
-  
+      /*============ NAV BAR ======*/
+      .logo-text{
+        display: none;
+    }
+
+    .logo-image {
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .search-box{
+        top: 3.5%;
+        left: 48%;
+        width: 70%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
 }

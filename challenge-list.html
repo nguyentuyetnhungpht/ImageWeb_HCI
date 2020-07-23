@@ -16,32 +16,44 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/challeng.css">
+    <link rel="stylesheet" type="text/css" href="resources/reponsive/challenge_respon.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #232B34; ">
-        <img class ="logo-img" src="resources/img/logo.png" alt="Remus logo">
-        <div class="logo-text"><a href="/index.html">Remus</a></div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="search-box" type="search"
-                placeholder=" Search for free photos">
-        </form>
+    <!-- SCRIPT MENU TOGGLE -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('.main-nav').toggleClass('active')
+            })
+        })
+    </script>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-right: 10px;">
-            <ul class="main-nav navbar-nav mr-auto mt-2 mt-lg-0">
-                <li>
-                    <a href="#">Explore <span class="sr-only">(current)</span></a>
-                </li>
-                <li>
-                    <a href="#">License</a>
-                </li>
-                <li>
-                    <a href="#" class="ion-ios-bell icon-small"></a>
-                </li>
-                <li>
-                    <a href="./profile.html" class="ion-android-person icon-small"></a>
-                </li>
-            </ul>
+    <nav class="main-nav-top">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <img src="resources/img/logo.png" alt="Remus logo" class="logo-image">
+                <div class="logo-text"><a href="/index.html">Remus</a></div>
+
+            </div>
+            <div class="col span-1-of-3 search-box">
+                <input class="search-txt" type="text" name="" placeholder="Search for free photos and videos">
+            </div>
+            <div class="col span-1-of-3">
+                <div class="menu-toggle"></div>
+                <ul class="main-nav">
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#" class="ion-ios-bell icon-small"></a></li>
+                    <li><a href="./profile.html" class="ion-android-person icon-small"></a></li>
+                    <li><button class="btn btn-full btn_upload" type="submit">Upload</button></li>
+                </ul>
+            </div>
         </div>
-        <button class="btn btn-full" type="submit">Upload</button>
     </nav>
     <div class="main-nav-bar-center">
         <ul class="nav justify-content-center main-nav-bar">
@@ -58,8 +70,7 @@
                 <a class="nav-link " href="./leaderboard.html">Leaderboard</a>
             </li>
             <li class="challenge-li-active nav-item">
-                <a class=" nav-link" href="./challenge-list.html" 
-                style="color: #0064F9;">Challenge</a>
+                <a class=" nav-link" href="./challenge-list.html" style="color: #0064F9;">Challenge</a>
             </li>
         </ul>
     </div>
@@ -73,9 +84,9 @@
         </div>
     </div>
 
-  <section class="challenge-active-section">
-        <div class="row">
-            <div class="challenge-section">
+    <section class="challenge-active-section">
+        <div class="container">
+            <div class="row">
                 <h2><a class="challenge-section-active" href="./challenge-detail.html">Active Challenges</a></h2>
                 <div class="challenge-gallery">
                     <div class="gallery">
@@ -85,11 +96,11 @@
                                 alt="Gallery image 1" class="gallery__img">
                         </figure>
                         <figure class="gallery__item gallery__item--2">
-                            <img src="resources/img/pexels-4.jpeg" style="border-bottom-right-radius: 10px;"
+                            <img src="resources/img/pexels-9.jpg" style="border-bottom-right-radius: 10px;"
                                 alt="Gallery image 2" class="gallery__img">
                         </figure>
                         <figure class="gallery__item gallery__item--3" style="  margin: 0; padding: 0;">
-                            <img src="resources/img/pexels-2.jpeg" style="border-top-right-radius: 10px;"
+                            <img src="resources/img/pexels-8.jpg" style="border-top-right-radius: 10px;"
                                 alt="Gallery image 3" class="gallery__img">
                         </figure>
                     </div>
@@ -103,6 +114,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="challenge-past-section">
@@ -113,8 +125,8 @@
                     <div class="gallery">
                         <figure class="gallery__item gallery__item--1">
                             <img src="resources/img/pexels-3.jpeg"
-                                style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" alt="Gallery image 1"
-                                class="gallery__img">
+                                style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"
+                                alt="Gallery image 1" class="gallery__img">
                         </figure>
                         <figure class="gallery__item gallery__item--2">
                             <img src="resources/img/pexels-5.jpeg" style="border-bottom-right-radius: 10px;"

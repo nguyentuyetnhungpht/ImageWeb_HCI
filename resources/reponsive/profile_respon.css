@@ -1,10 +1,26 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) and (max-width: 1415px){ 
+@media (min-width: 1200px) { 
     
+    .row{
+        padding: 0 1%;
+    }
+
+    .logo-image {
+        margin-left: 0px;
+    }
+
+    .btn-full{
+        padding: 4px 22px;
+    }
+
     .search-box{
-        width: 550px;
-        height: 45px;
+        top: 2.35%;
+        left: 34%;
+        width: 42%;
+    }
+    .main-nav li{
+        margin-left: 35px;
     }
 
     .user-intro{
@@ -14,10 +30,6 @@
     .media img{
         margin-top: 15px;
         height: 130px;
-    }
-
-    .main-nav li{
-        padding: 0 10px;    
     }
 
     .section-profile{
@@ -32,12 +44,18 @@
         display: none;
     }
 
-    .logo-img{
-        margin-right: 10px;
+    .logo-image {
+        margin-left: 5px;
+    }
+    .search-box{
+        top: 2.5%;
+        left: 38%;
+        width: 60%;
     }
 
-    .search-box{
-        width: 580px;
+   
+    .main-nav-top{
+       padding-top: 3px;
     }
 
     .main-nav li:first-child{ 
@@ -48,27 +66,92 @@
         display: none;
     }
 
+    .section-profile{
+        padding-bottom: 150px;
+    }
+
     .profile-header{    
         left:48%;
+    }
+
+    .user-intro{
+        font-size: 16px;
     }
    
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px)  { 
+    /*============ NAV BAR ======*/
+    .logo-text{
+        display: none;
+    }
 
+    .logo-image {
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .search-box{
+        top: 3%;
+        left: 45%;
+        width: 75%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
 
 
     /*==========PROFILE ===========*/
     .section-profile{
-        margin: 120px 80px;
+        padding-left: 0px;
+        margin-bottom: 200px;
     }
     .profile-header{
-        left:44%;
+        top: 20%;
+        left:40%;
         width: 50%;
     }
     .profile-user-info img{
-        margin-left: 130px;
+        margin-left: 150px;
     }
     .user-avatar{
         float: none;
@@ -95,79 +178,190 @@
 
  @media (min-width: 598px) and (max-width: 767px){
 
+        /*============ NAV BAR ======*/
+        .logo-text{
+            display: none;
+        }
+    
+        .logo-image {
+            padding-top: 10px;
+            margin-left: 3px;
+        }
+    
+        .search-box{
+            top: 3.2%;
+            left: 45%;
+            width: 70%;
+        }
+    
+        /*========= MENU TOGGLE ==============*/
+        .menu-toggle{
+            display:block;
+            height: 40px;
+            width: 40px;
+            color: #fff;
+            float: right;
+            cursor: pointer;
+            text-align: center;
+            font-size: 130%;
+        }
+    
+        .menu-toggle:before{
+            content:'\f0c9';
+            font-family: FontAwesome;
+            line-height:40px;
+        }
+    
+        .menu-toggle.active:before{
+            content:'\f00d';
+        }
+    
+        .main-nav{
+            display: none;
+        }
+    
+        .main-nav.active{
+            display: block;
+            width: 100%;
+        }
+    
+        .main-nav.active ul{
+            display: block;
+            float: right;
+        }
+    
+        .main-nav.active li{
+            display: block;
+            background-color: #000;
+        }
+
     /*==========PROFILE ===========*/
     .section-profile{
-        margin: 120px 80px;
+        margin-bottom: 150px;
     }
     .profile-header{
-        left:40%;
-        width: 50%;
+        top: 20%;
+        left:30%;
+        width: 100%;
     }
     .profile-user-info img{
-        margin-left: 40%;
+        margin-left: 230px;
     }
     .user-avatar{
         float: none;
     }
     .user-name{
-        width: 75%;
-        text-align: center;
-        margin: 5px 0;
         float: none;
     }
 
     .group-btn{
-        margin-left: 60px;
-        width: 100%;
         float: none;
     }
 
     .media-body{
-        width: 150%;
+        text-align: center;
         float: none;
     }
 
     .user-social{
-        width: 100%;
         margin: 15px 0px;
         padding-left: 35px;
         text-align: center;
     }
 
-    .user-view{
-       text-align: center;
     }
-
-}
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 480px) and (max-width: 597px){
-       /*==========PROFILE ===========*/
-    .section-profile{
-        margin: 120px 80px;
-    }
-    .profile-header{
-        left:30%;
-        width: 50%;
-    }
-    .profile-user-info img{
-        margin-left: 40%;
-    }
-    .user-name{
-        width: 90%;
-    }
-
-    .group-btn{
-        width: 100%;
-    }
-
-    .media-body{
-        width: 150%;
-    }
-
-    .user-social{
-        width: 130%;
-        text-align: center;
-    }
+              /*============ NAV BAR ======*/
+              .logo-text{
+                display: none;
+            }
+        
+            .logo-image {
+                padding-top: 10px;
+                margin-left: 3px;
+            }
+        
+            .search-box{
+                top: 3.5%;
+                left: 48%;
+                width: 70%;
+            }
+        
+            /*========= MENU TOGGLE ==============*/
+            .menu-toggle{
+                display:block;
+                height: 40px;
+                width: 40px;
+                color: #fff;
+                float: right;
+                cursor: pointer;
+                text-align: center;
+                font-size: 130%;
+            }
+        
+            .menu-toggle:before{
+                content:'\f0c9';
+                font-family: FontAwesome;
+                line-height:40px;
+            }
+        
+            .menu-toggle.active:before{
+                content:'\f00d';
+            }
+        
+            .main-nav{
+                display: none;
+            }
+        
+            .main-nav.active{
+                display: block;
+                width: 100%;
+            }
+        
+            .main-nav.active ul{
+                display: block;
+                float: right;
+            }
+        
+            .main-nav.active li{
+                display: block;
+                background-color: #000;
+            }
+    
+        /*==========PROFILE ===========*/
+        .section-profile{
+            margin-bottom: 150px;
+        }
+        .profile-header{
+            top: 20%;
+            left:25%;
+            width: 100%;
+        }
+        .profile-user-info img{
+            margin-left: 200px;
+        }
+        .user-avatar{
+            float: none;
+        }
+        .user-name{
+            float: none;
+        }
+    
+        .group-btn{
+            float: none;
+        }
+    
+        .media-body{
+            text-align: center;
+            float: none;
+        }
+    
+        .user-social{
+            margin: 15px 0px;
+            padding-left: 35px;
+            text-align: center;
+        }
 }
 

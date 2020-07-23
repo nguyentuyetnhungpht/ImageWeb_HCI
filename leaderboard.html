@@ -16,33 +16,42 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/leaderboard.css">
+    <link rel="stylesheet" type="text/css" href="resources/reponsive/leaderboard_respon.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+    <!-- SCRIPT MENU TOGGLE -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('.main-nav').toggleClass('active')
+            })
+        })
+    </script>
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #232B34; ">
-        <img class ="logo-img" src="resources/img/logo.png" alt="Remus logo">
-        <div class="logo-text"><a href="/index.html">Remus</a></div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="search-box" type="search"
-                placeholder=" Search for free photos">
-        </form>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-right: 10px;">
-            <ul class="main-nav navbar-nav mr-auto mt-2 mt-lg-0">
-                <li>
-                    <a href="#">Explore <span class="sr-only">(current)</span></a>
-                </li>
-                <li>
-                    <a href="#">License</a>
-                </li>
-                <li>
-                    <a href="#" class="ion-ios-bell icon-small"></a>
-                </li>
-                <li>
-                    <a href="./profile.html" class="ion-android-person icon-small"></a>
-                </li>
+<nav class="main-nav-top">
+    <div class="row">
+        <div class="col span-1-of-3">
+            <img src="resources/img/logo.png" alt = "Remus logo" class="logo-image"> 
+            <div class="logo-text"><a href="/index.html">Remus</a></div>
+       
+        </div>
+        <div class="col span-1-of-3 search-box">
+            <input class="search-txt" type="text" name="" placeholder="Search for free photos and videos">
+        </div>
+        <div class="col span-1-of-3">
+            <div class="menu-toggle"></div>
+            <ul class="main-nav">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">License</a></li>
+                <li><a href="#" class="ion-ios-bell icon-small"></a></li>
+                <li><a href="./profile.html" class="ion-android-person icon-small"></a></li>
+                <li><button class="btn btn-full btn_upload" type="submit">Upload</button></li>
             </ul>
         </div>
-        <button class="btn btn-full" type="submit">Upload</button>
-    </nav>
+    </div>
+</nav>
     <div class="main-nav-bar-center">
         <ul class="nav justify-content-center main-nav-bar">
             <li class="nav-item">
@@ -75,7 +84,7 @@
 
     <section class="leaderboard_content">
         <div class="row">
-            <div class="col span-1-of-2 ">
+            <div class="col span-1-of-2">
                 <div class="leaderboard_rank">
                     <div class="rank"> 1 </div>
                     <div class="view"> <strong> 1.55m</strong> </br>view </div>
