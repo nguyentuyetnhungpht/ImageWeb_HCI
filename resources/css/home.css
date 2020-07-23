@@ -107,11 +107,6 @@ a:active{
     border: 1px solid #05A081;
 }
 
-.btn-full:link,
-.btn-full:visited{
-    background-color: #05A081;
-    border: 1px solid #05A081;
-}
 
 .btn-full:hover,
 .btn-full:active{

@@ -110,17 +110,11 @@ a:active{
     text-decoration: none;
     color: #fff;
     border-radius: 3px;
+    padding: 5px 25px;
 }
 .btn-full{
     font-size:18px;
     font-weight: 500;
-    padding: 5px 25px;
-    background-color: #05A081;
-    border: 1px solid #05A081;
-}
-
-.btn-full:link,
-.btn-full:visited{
     background-color: #05A081;
     border: 1px solid #05A081;
 }
@@ -132,23 +126,37 @@ a:active{
     border: 1px solid #1A836E;
 }
 
-.btn-full-small{
+.btn-small{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
     padding:3px 10px;
     margin:2px;
     font-size:15px;
+}
+
+.btn-full-small{
+    color:#fff;
     background-color: #05A081;
     border: 1px solid #05A081;
 }
 
+.btn-full-small:hover,
+.btn-full-small:active{
+    background-color: #0ABA95;
+    border: 1px solid #0ABA95;
+}
+
 .btn-ghost-small{
-    padding:3px 10px;
-    margin:2px;
-    font-size:15px;
     background-color: #fff;
     border: 1px solid #DDDDDD;
     color:black;
 }
 /* ======= LOGO =========== */
+
+.logo-img{
+    height:50px;
+}
 .logo-text{
     margin-left:5px;
     margin-right: 35px;
@@ -156,9 +164,16 @@ a:active{
     font-weight: bold;
 }
 
+.search-box{
+    width: 750px;
+    height: 45px;
+    border-radius: 5px;
+    border-style: none;
+}
+
 /*======== MAIN NAV TOP ======*/
 .main-nav{
-    color: #fff;
+    color: #fff;    
     margin-left:10px;
     font-size: 90%;
 }
@@ -184,9 +199,8 @@ a:active{
 }
 .profile-header{
     position: absolute;
-    width: 1140px;
     top: 25%;
-    left:50%;
+    left:40%;
     transform: translate(-30%, -25%);
 }
 
@@ -209,7 +223,7 @@ a:active{
 
 .user-social{
     width: auto;
-    margin: 30px 0px;
+    margin: 25px 0px;
     position: fixed;
     font-weight: 100;
     color: #707070;
@@ -283,13 +297,22 @@ a:active{
     width: 100%;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
+    .column {
+      -ms-flex: 33%;
+      flex: 33%;
+      max-width: 33%;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
     .column {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
     }
   }
+
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
