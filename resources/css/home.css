@@ -102,7 +102,7 @@ a:active{
 .btn-full{
     font-size:18px;
     font-weight: 500;
-    padding: 5px 25px;
+    padding: 6px 25px;
     background-color: #05A081;
     border: 1px solid #05A081;
 }
@@ -113,6 +113,11 @@ a:active{
     color: #CEBDC5;
     background-color: #1A836E;
     border: 1px solid #1A836E;
+}
+
+.btn_upload{
+    margin-left: 45px;
+    margin-top: -5px;
 }
 
 /* ================= */
@@ -156,7 +161,7 @@ header{
 
 .main-nav li{
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -164,7 +169,6 @@ header{
 
 .main-nav li a:link,
 .main-nav li a:visited{
-    padding: 8px 0;
     color: #fff;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
@@ -174,7 +178,6 @@ header{
 
 .main-nav li a:active,
 .main-nav li a:hover{
-    padding: 8px 0;
     color: #555;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
