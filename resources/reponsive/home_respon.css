@@ -31,7 +31,7 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1199px){
     .btn_upload{
         margin-left: 10px;
     }
@@ -60,11 +60,202 @@
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 992px)  { 
+@media (min-width: 768px) and (max-width: 991px)  { 
+    .logo-text {
+        display: none;
+    }
+
+    .logo-image {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*========= SEARCH BOX ========*/
+    .hero-text{
+        width: 60%;
+    }
+
+    .search-box{
+        top: 40%;
+        width: 60%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
+
 
  }
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 768px){
-    
+@media (min-width: 598px) and (max-width: 767px){
+    .logo-text {
+        display: none;
+    }
+
+    .logo-image {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*========= SEARCH BOX ========*/
+    .hero-text{
+        width: 75%;
+        font-size: 110%;
+    }
+
+    .search-box{
+        top: 40%;
+        width: 70%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 597px){
+    .logo-text {
+        display: none;
+    }
+
+    .logo-image {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*========= SEARCH BOX ========*/
+    .hero-text{
+        width: 70%;
+        font-size: 100%;
+    }
+
+    .search-box{
+        top: 40%;
+        width: 70%;
+    }
+
+    /*========= MENU TOGGLE ==============*/
+    .menu-toggle{
+        display:block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: FontAwesome;
+        line-height:40px;
+    }
+
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    .main-nav.active ul{
+        display: block;
+        float: right;
+    }
+
+    .main-nav.active li{
+        display: block;
+        background-color: #000;
+    }
+
+    /* ================= */
+    /* MAIN NAV BAR CENTER */
+    /* ================= */
+    .main-nav-bar-center ul li a{
+        padding: 10px;
+        font-size: 15px;
+    }
 }

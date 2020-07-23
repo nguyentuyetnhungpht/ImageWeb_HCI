@@ -9,8 +9,21 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/home.css">
         <link rel="stylesheet" type="text/css" href="resources/reponsive/home_respon.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <Title>Remus</Title>
     </head>
+
+    <!-- SCRIPT MENU TOGGLE -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('.main-nav').toggleClass('active')
+            })
+        })
+    </script>
+    
     <body>
         <header>
             <nav class="main-nav-top">
@@ -20,12 +33,13 @@
                         <div class="logo-text"><a href="/index.html">Remus</a></div>
                     </div>
                     <div class="col span-2-of-4">
+                        <div class="menu-toggle"></div>
                         <ul class="main-nav">
                             <li><a href="#">Explore</a></li>
                             <li><a href="#">License</a></li>
                             <li><a href="#" class="ion-ios-bell icon-small"></a></li>
                             <li><a href="./profile.html" class="ion-android-person icon-small"></a></li>
-                            <button class="btn btn-full btn_upload" type="submit">Upload</button>
+                            <li><button class="btn btn-full btn_upload" type="submit">Upload</button></li>
                         </ul>
                     </div>
                 </div>
@@ -40,6 +54,7 @@
                 </div>
             </div>
         </header>
+        
         <div class="main-nav-bar-center">
             <ul class="nav justify-content-center main-nav-bar">
                 <li class="nav-item">
