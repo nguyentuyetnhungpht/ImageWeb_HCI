@@ -132,7 +132,11 @@ header{
     background-attachment: fixed; /*A background-image that will not scroll with the page (fixed)*/
 }
 /* ======= LOGO =========== */
-
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 .logo-image {
     height: 50px;
     width: auto;

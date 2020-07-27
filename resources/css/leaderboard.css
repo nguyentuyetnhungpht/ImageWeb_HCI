@@ -168,7 +168,7 @@ a:active{
     position: absolute;
     top: 2.3%;
     left: 37%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-20%);
     background: #fff;
     height: 40px;
     width: 50%;
@@ -191,6 +191,11 @@ a:active{
 /*======== MAIN NAV TOP ======*/
 
 
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 .main-nav-top{
     height: 60px;
