@@ -18,7 +18,6 @@
     .hero-text{
         width: 50%;
         top: 30%;
-        font-size: 130%;
     }
 
     .search-box{
@@ -48,9 +47,8 @@
 
        /*===== HERO ===== */
     .hero-text{
-        width: 55%;
+        width: 57%;
         top: 30%;
-        font-size: 110%;
     }
 
     .search-box{
