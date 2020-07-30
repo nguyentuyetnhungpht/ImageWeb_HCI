@@ -27,7 +27,7 @@ html {
 }
 
 section{
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .box{
@@ -406,6 +406,23 @@ h2 a:visited{
 /* CHALLENGE-TITLE */
 /* ================= */
 
+.challenge-detail-first{
+    margin-left: 80px;
+}
+.challenge-detail-second{
+    margin-left: 200px;
+}
+/* Container for flexboxes */
+.rowX {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    /* Create four equal columns */
+.columnX {
+flex: 50%;
+}
+
 .challenge-hero{
     padding-left: 90px;
 }
@@ -423,7 +440,7 @@ h2 a:visited{
 
 .challenge-hero-title-prize{
     font-size:15px;
-    
+    width: 70%;
 }
 .challenge-hero-title-prize img{
     width: 60px;
@@ -432,9 +449,10 @@ h2 a:visited{
     border-radius: 50%;
 }
 
-.challenge-submit{
-    padding-left: 50px;
+.btn-text{
+    padding: 0 25px;
 }
+
 
 .challenge-submit a:hover,
 .challenge-submit a:active{
@@ -472,9 +490,15 @@ h2 a:visited{
     margin-left: 30px;
 }
 
+.challenge-submit{
+    float: right;
+    margin-right:80px;
+}
+
+
 .challenge-submit img{
-    height: 300px;
-    width: 500px;
+    height: auto;
+    width: 450px;
     border-radius:10px;
 }
 

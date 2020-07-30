@@ -18,7 +18,9 @@
     .main-nav li{
         margin-left: 35px;
     }
-    
+
+
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -51,6 +53,21 @@
 .main-nav li:nth-child(2){ 
     display: none;
 }
+      /* +++++++++++++++++++Challenge DETAIL ++++++++++++++++++++++++++++++++++++++ */
+
+
+      .challenge-detail-second{
+        margin-left: 30px;
+    }
+
+    .challenge-submit{
+        margin-right:10px;
+    }
+
+    .challenge-describe-text{
+        padding-left: 50px;
+    }
+    
 
 
  /* +++++++++++++++++++Challenge UPLOAD ++++++++++++++++++++++++++++++++++++++ */
@@ -72,7 +89,7 @@
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px)  { 
+@media (min-width: 850px) and (max-width: 991px)  { 
     /*============ NAV BAR ======*/
     .logo-text{
         display: none;
@@ -130,6 +147,36 @@
         background-color: #000;
     }
 
+      /* +++++++++++++++++++Challenge DETAIL ++++++++++++++++++++++++++++++++++++++ */
+
+
+    .challenge-detail-second{
+        margin-left: 0px;
+    }
+
+    .challenge-detail-first{
+        margin-left: 50px;
+    }
+
+    .challenge-describe-text{
+        padding-left: 60px;
+    }
+
+    .challenge-submit{
+      float: left;
+      margin-left:80px;
+    }
+
+    .challenge-submit img{
+        width: 680px;
+    }
+
+    .challenge-submit-present img{
+        width: auto;
+        height: 70px;
+    }
+
+
      /* +++++++++++++++++++Challenge UPLOAD ++++++++++++++++++++++++++++++++++++++ */
 
     .upload-info-list{
@@ -149,7 +196,7 @@
  }
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 598px) and (max-width: 767px){
+@media (min-width: 598px) and (max-width: 849px){
     /*============ NAV BAR ======*/
     .logo-text{
         display: none;
@@ -208,6 +255,56 @@
         background-color: #000;
     }
 
+        /* +++++++++++++++++++Challenge DETAIL ++++++++++++++++++++++++++++++++++++++ */
+
+    .rowX {
+            flex-direction: column;
+          }
+
+    .challenge-detail-first{
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    .challenge-detail-second{
+        margin-left: 40px;
+    }
+
+    .challenge-hero-title-ready{
+        font-size:25px;
+        font-weight: 600;
+        word-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .btn-full{
+        padding: 8px 25px;
+    }
+
+    .challenge-hero-title-prize{
+        margin-top: 5px;
+    }
+
+    .btn-text{
+        padding: 0px 110px;
+    }
+
+    .challenge-submit{
+        float: left;
+        margin-left:50px;
+      }
+    
+    .challenge-describe-text{
+        padding-left: 40px;
+    }
+    .challenge-submit img{
+        width: 500px;
+    }
+
+    .challenge-submit-present img{
+        width: auto;
+        height: 60px;
+    }
+    
         /* +++++++++++++++++++Challenge UPLOAD ++++++++++++++++++++++++++++++++++++++ */
 
     .upload-info-list{
@@ -284,6 +381,52 @@
         display: block;
         background-color: #000;
     }
+            /* +++++++++++++++++++Challenge DETAIL ++++++++++++++++++++++++++++++++++++++ */
+
+        .rowX {
+            flex-direction: column;
+            }
+    
+        .challenge-detail-first{
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        .challenge-detail-second{
+            margin-left: 30px;
+        }
+    
+        .challenge-hero-title-ready{
+            font-size:25px;
+            font-weight: 600;
+            word-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .challenge-hero-title-prize{
+            margin-top: 5px;
+        }
+    
+        .btn-text{
+            padding: 0px 50px;
+        }
+
+        .challenge-submit{
+            float: left;
+            margin-left:50px;
+          }
+        
+          .challenge-describe-text{
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        
+        .challenge-submit img{
+            width: 400px;
+        }
+        .challenge-submit-present img{
+            width: auto;
+            height: 50px;
+        }
 
     /* +++++++++++++++++++Challenge UPLOAD ++++++++++++++++++++++++++++++++++++++ */
     .challenge-upload-title{

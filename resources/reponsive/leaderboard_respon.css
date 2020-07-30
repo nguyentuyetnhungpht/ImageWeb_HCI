@@ -24,6 +24,18 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px){
+
+
+    .leaderboard_title_headline{
+        padding: 20px 50px;
+    }
+
+    .leaderboard_rank{
+        width: 100px;
+        padding-left: 40px;
+        margin-right: 30px;
+    }
+
      /*============ NAV BAR ======*/
 
     .logo-text{
@@ -53,7 +65,7 @@
     }
     /*============ USER ======*/
     .leaderboard_info{
-        padding-top: 15px;
+        padding-top: 25px;
         padding-left: 20px;
     }
     .leaderboard_name{
@@ -68,6 +80,30 @@
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px)  { 
+
+    .leaderboard_title_headline{
+        padding: 20px 20px 0 20px;
+    }
+
+    .leaderboard_rank{
+        width: 100px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-top:10px;
+    }
+
+    .rank{
+        font-size: 32px;
+    }
+    
+    .view{
+        font-size:12px;
+    }
+
+    .rowX {
+        flex-direction: column;
+      }
+
      /*============ NAV BAR ======*/
      .logo-text{
         display: none;
@@ -132,6 +168,31 @@
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 598px) and (max-width: 767px){
+
+    .leaderboard_title_headline{
+        padding: 20px 20px 0 20px;
+    }
+
+    .leaderboard_rank{
+        width: 100px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-top:10px;
+    }
+
+    .rank{
+        font-size: 32px;
+    }
+    
+    .view{
+        font-size:12px;
+    }
+
+    .rowX {
+        flex-direction: column;
+      }
+
+      
      /*============ NAV BAR ======*/
      .logo-text{
         display: none;
@@ -194,6 +255,30 @@
 }
 
 @media (min-width: 480px) and (max-width: 597px){
+    .leaderboard_title_headline{
+        padding: 20px 20px 0 20px;
+    }
+
+    .leaderboard_rank{
+        width: 100px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-top:10px;
+    }
+
+    .rank{
+        font-size: 32px;
+    }
+    
+    .view{
+        font-size:12px;
+    }
+
+    .rowX {
+        flex-direction: column;
+      }
+
+      
       /*============ NAV BAR ======*/
       .logo-text{
         display: none;

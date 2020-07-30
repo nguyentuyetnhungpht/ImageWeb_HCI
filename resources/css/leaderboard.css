@@ -277,7 +277,7 @@ h2 a:visited{
     width: 200px;
     height: 100px;
     text-align: center;
-    padding-left: 100px;
+    padding-left: 80px;
     float: left;
 }
 
@@ -316,7 +316,7 @@ h2 a:visited{
 .column {
     float: left;
     width: 33.33%;
-    height: 30px;
+    height: 100%;
     padding: 5px;
   }
   
@@ -333,6 +333,19 @@ h2 a:visited{
     object-fit:cover;
 
   }
+
+    /* Container for flexboxes */
+.rowX {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns */
+  .columnX {
+    flex: 50%;
+    padding: 5px 20px;
+  }
+
 
   /* ========================= */
 /* FOOTER */
@@ -421,4 +434,3 @@ footer p{
     text-align: center;
     margin-top: 20px;
 }
-  
