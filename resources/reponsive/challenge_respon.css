@@ -311,4 +311,14 @@
     .challenge-upload-publish{
         margin-top: 55%;
     }
+
+    footer{
+        font-size: 70%;
+    }
+
+    .footer-nav li,
+    .social-links li{
+    margin-right: 10px;
+    }
+
 }

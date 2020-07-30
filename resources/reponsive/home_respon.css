@@ -256,4 +256,14 @@
         padding: 10px;
         font-size: 15px;
     }
+
+    footer{
+        font-size: 70%;
+    }
+
+    .footer-nav li,
+    .social-links li{
+    margin-right: 10px;
+    }
+
 }
