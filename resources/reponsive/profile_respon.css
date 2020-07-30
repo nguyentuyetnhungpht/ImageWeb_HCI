@@ -22,10 +22,6 @@
     .main-nav li{
         margin-left: 35px;
     }
-
-    .user-intro{
-        font-size: 16px;
-    }
     
     .media img{
         margin-top: 15px;
@@ -70,12 +66,13 @@
         padding-bottom: 150px;
     }
 
-    .profile-header{    
-        left:48%;
+    .profile-header{
+        width: 100%;
+        transform: translate(20%, 10%);
     }
 
     .user-intro{
-        font-size: 16px;
+        font-size: 18px;
     }
    
 }
@@ -141,15 +138,19 @@
 
 
     /*==========PROFILE ===========*/
+
+
     .section-profile{
-        padding-left: 0px;
-        margin-bottom: 200px;
+        height: 550px;
+        margin: 0px 0px;
+        padding-bottom: 200px;
     }
+
     .profile-header{
-        top: 20%;
-        left:40%;
         width: 50%;
+        transform: translate(50%, 10%);
     }
+
     .profile-user-info img{
         margin-left: 150px;
     }
@@ -167,6 +168,11 @@
     .media-body{
         text-align: center;
         float: none;
+    }
+
+
+    .user-intro{
+        font-size: 20px;
     }
 
     .user-social{
@@ -238,13 +244,16 @@
 
     /*==========PROFILE ===========*/
     .section-profile{
-        margin-bottom: 150px;
+        height: 550px;
+        margin: 0px 0px;
+        padding-bottom: 200px;
     }
+
     .profile-header{
-        top: 20%;
-        left:30%;
         width: 100%;
+        transform: translate(0%, 10%);
     }
+
     .profile-user-info img{
         margin-left: 230px;
     }
@@ -264,6 +273,9 @@
         float: none;
     }
 
+    .user-intro{
+        font-size: 19px;
+    }
     .user-social{
         margin: 15px 0px;
         padding-left: 35px;
@@ -333,15 +345,18 @@
     
         /*==========PROFILE ===========*/
         .section-profile{
-            margin-bottom: 150px;
+            height: 550px;
+            margin: 0px 0px;
+            padding-bottom: 200px;
         }
+    
         .profile-header{
-            top: 20%;
-            left:25%;
-            width: 100%;
+            width: 80%;
+            transform: translate(10%, 10%);
         }
+    
         .profile-user-info img{
-            margin-left: 200px;
+            margin-left: 150px;
         }
         .user-avatar{
             float: none;
