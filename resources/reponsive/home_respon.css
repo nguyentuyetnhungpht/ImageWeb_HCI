@@ -213,11 +213,13 @@
         display:block;
         height: 40px;
         width: 40px;
+        margin:10px;
         color: #fff;
         float: right;
         cursor: pointer;
         text-align: center;
         font-size: 130%;
+        
     }
 
     .menu-toggle:before{

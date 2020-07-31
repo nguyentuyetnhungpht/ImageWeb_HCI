@@ -251,7 +251,7 @@ a:active{
 
 .main-nav-bar li a:hover,
 .main-nav-bar li a:active{
-    color: #0064F9;
+    color: #FF5574;
 }
 
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -362,39 +362,6 @@ h2 a:visited{
     /* grid-column: 5 / span 4;
     grid-row: 1 / span 5; */
   }
-  
-  .gallery__item--4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
-  
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4;  */
-    /* grid-row: 3 / span 3; */
-  }
-  
-  .gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
-  
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4; */
-    /* grid-row: 6 / span 3; */
-  }
-  
-  .gallery__item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
-  
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
-  }
 
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -459,8 +426,8 @@ flex: 50%;
     color: #CEBDC5;
     background-color: #1A836E;
     border: 1px solid #1A836E;
-
 }
+
 
 .challenge-hero-title-ready{
     font-size:25px;
@@ -503,9 +470,9 @@ flex: 50%;
 }
 
 .challenge-submit-present img{
-    width: 80px;
-    height: 80px;
-    border: 1px solid #E8E8E8;
+    width: auto;
+    height: 70px;
+    border: 2px solid #E8E8E8;
     border-radius: 50%;
 }
 
