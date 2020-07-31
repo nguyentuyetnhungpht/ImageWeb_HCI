@@ -2,8 +2,8 @@
 /*global $, jQuery*/
 
 $(document).ready(function() { 
-    $('.js--section-features').wayponit(function (direction) { 
-        if (direction == "down") {
+    $('.js--section-features').wayponit(function(direction) { 
+        if (direction === "down") {
            $('nav').addClass('sticky'); 
         } else {
             $('nav').removeClass('sticky'); 
