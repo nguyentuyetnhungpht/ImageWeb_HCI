@@ -1,4 +1,4 @@
 # Human Computer Interaction
 # Image Website
 
- <img src="https://i.imgur.com/1j41BAP.png" width=300 >
+ <img src="https://i.imgur.com/1j41BAP.png" width=700 >
